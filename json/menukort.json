@@ -1,0 +1,68 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "titel": "Tatar af kalv",
+      "beskrivelse": "Lækker australsk wagyu, årstidens urter",
+      "pris": 110,
+      "ret": "forret",
+      "foto": "tatar.png"
+    },
+    {
+      "id": 2,
+      "titel": "Kammusling Ceviche",
+      "beskrivelse": "Kammusling vendt med chili, agurk, æble, frisk lime, ørredrogn, aromatisk koriander",
+      "pris": 120,
+      "ret": "forret",
+      "foto": "ceviche.png"
+    },
+    {
+      "id": 3,
+      "titel": "Pandestegt Helleflynder",
+      "beskrivelse": "Norsk helleflynder, asiatisk inspireret sauce, syltede bøgehatte, broccolini, sprøde chips",
+      "pris": 150,
+      "ret": "hovedret",
+      "foto": "helleflynder.png"
+    },
+    {
+      "id": 4,
+      "titel": "Bøf Wellington",
+      "beskrivelse": "Oksemørbrad, dijonsennep, duxelles af svampe, parmaskinke, butterdej",
+      "pris": 200,
+      "ret": "hovedret",
+      "foto": "wellington.png"
+    },
+    {
+      "id": 5,
+      "titel": "Saltkaramel Creme Brulée",
+      "beskrivelse": "Klassisk creme brulée, saltkaramel, friske bær",
+      "pris": 80,
+      "ret": "dessert",
+      "foto": "brulée.png"
+    },
+    {
+      "id": 6,
+      "titel": "Havtorn Is",
+      "beskrivelse": "Havtorn Is, hjemmelavet havtorn marmelade, vaffel",
+      "pris": 80,
+      "ret": "dessert",
+      "foto": "is.png"
+    },
+    {
+      "id": 7,
+      "titel": "Kroketter",
+      "beskrivelse": "Svinebryst, brunet smørmayo, Gammel Knas",
+      "pris": 50,
+      "ret": "tilbehør",
+      "foto": "kroketter.png"
+    },
+    {
+      "id": 8,
+      "titel": "Trøffel Fries",
+      "beskrivelse": "Frisk estragon, havsalt, friskrevel trøffel, bernaisemayo",
+      "pris": 50,
+      "ret": "tilbehør",
+      "foto": "fries.png"
+    }
+  ]
+}

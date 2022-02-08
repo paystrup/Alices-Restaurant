@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alices Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/63f60264a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt="Alice Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a class="bestilbord nav-link" href="bestilbord.html">Bestil bord</a>
+                <a class="Menukort nav-link" href="menukort.html">Menukort</a>
+                <a class="oomalice nav-link" href="omrestauranten.html">Om restauranten</a>
+            </div>
+
+            <div class="nav-socials">
+                <a class="nav-icon social-link" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            
+            <a class="social-link" id="hamburger-button" href="javascript:void(0);" onclick="toggleNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HAMBURGER MENU -->
+    <div class="container">
+        <div class="content">
+            <div class="responsive-nav" id="responsive-nav">
+                <a class="bestilbord nav-link" href="bestilbord.html">Bestil bord</a>
+                <a class="Menukort nav-link" href="menukort.html">Menukort</a>
+                <a class="oomalice nav-link" href="omrestauranten.html">Om restauranten</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BESTIL BORD FORM -->
+    <section class="bestilbord-form">
+        <h2>Bordbestilling</h2>
+
+        <form id="contact" action="action.html">
+          <fieldset id="f1">
+            <p>Dit navn</p> 
+            <input type="text" id="Name" name="namE" value="">
+            <div id="btn1" class="btn">Næste</div>
+          </fieldset>
+
+          <fieldset id="f2">
+            <p>Din email</p> 
+            <input type="email" id="Email" name="Email" value="">
+            <div class="knapperfieldset">
+                <div id="tilbagebtn1" class="btn">Tilbage</div>
+                <div id="btn2" class="btn">Næste</div>
+            </div>
+            
+          </fieldset>
+
+          <fieldset id="f3">
+            <p>Antal gæster</p> 
+            <input type="number" id="Nummer" placeholder="Min. 1 gæst">
+            <div class="knapperfieldset">
+                <div id="tilbagebtn2" class="btn">Tilbage</div>
+                <div id="btn3" class="btn">Næste</div>
+            </div>
+          </fieldset>
+
+          <fieldset id="f4">
+            <p>Vælg dato og tidspunkt</p>
+            <input type="date" id="dato" name="Dato">
+            <input  type="time" id="dato" name="Time"><br>
+            <div class="knapperfieldset">
+                <div id="tilbagebtn3" class="btn">Tilbage</div>
+                <div id="btn4" class="btn">Næste</div>
+            </div>
+          </fieldset>
+
+          <fieldset id="f5">
+            <p>Det var alt, gennemfør din bestilling ved at klikke på knappen nedenfor.</p>
+            <input type="submit" value="Bekræft ordre" class="submitbtn">
+          </fieldset>
+        </form>
+        
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo" id="footerlogo">
+        </div>
+
+        <div class="footer-menu">
+            <h4>Menu</h4>
+            <a class="bestilbordfooter-link" href="bestilbord.html">Bestil bord</a>
+            <a class="Menukort footer-link" href="menukort.html">Menukort</a>
+            <a class="oomalice footer-link" href="omrestauranten.html">Om restauranten</a>
+        </div>
+
+        <div class="footer-kontakt" id="kontakt"></div>
+
+        <div class="socialemedier-footer">
+            <h4>Sociale Medier</h4>
+            <div class="socialemedier-ikoner-footer">
+                <a class="footer-icon" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a class="footer-icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- LINK TIL JS EKSTERNT-->
+    <script src="js/bordbestilling.js"></script>
+</body>
+</html>

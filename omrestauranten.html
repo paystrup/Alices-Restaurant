@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alices Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/63f60264a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt="Alice Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a class="bestilbord nav-link" href="bestilbord.html">Bestil bord</a>
+                <a class="Menukort nav-link" href="menukort.html">Menukort</a>
+                <a class="oomalice nav-link" href="omrestauranten.html">Om restauranten</a>
+            </div>
+
+            <div class="nav-socials">
+                <a class="nav-icon social-link" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            
+            <a class="social-link" id="hamburger-button" href="javascript:void(0);" onclick="toggleNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HAMBURGER MENU -->
+    <div class="container">
+        <div class="content">
+            <div class="responsive-nav" id="responsive-nav">
+                <a class="bestilbord nav-link" href="bestilbord.html">Bestil bord</a>
+                <a class="Menukort nav-link" href="menukort.html">Menukort</a>
+                <a class="oomalice nav-link" href="omrestauranten.html">Om restauranten</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- OM RESTAURANTEN -->
+    <section id="omrestauranten">
+        <div class="or-hd-text">
+            <h2>Om Alices Restaurant</h2>
+            <p>Alices Restaurant  ligger på Klostergade 2 i latinerkvarteret i Aarhus. I 2010 overtog Alice og har siden da haft en mission om at tilbyde kvalitetsfyldt mad lavet af lokalproduceret råvarer til en overkommelig pris. Al mad tilberedes med hjemlig kærlighed, og vores mål er, at du føler dig hjemme i vores omgivelser. 
+                <br><br>Vi er en del af den internationale gastronomiske forbund <a href="https://www.chainedesrotisseurs.com/">Chaine des Rotiseurs</a>, der indkapsler restauranter og hoteller fra 75 lande, som alle overholder en bestemt standard indenfor fine dining og kvalitet.
+                <br><br>Vi glæder os til at byde dig velkommen i restauranten!
+                <br>De bedste hilsner fra
+            </p>
+            <img src="images/aliceunderskrift.png" alt="Alice Underskrift">
+        </div>
+        <div class="or-hd-pic">
+            <img src="images/foodpic1.png" alt="Billede af Alices gnocci">
+        </div>
+    </section>
+
+    <!-- KORT TIL RESTAURANTEN-->
+    <section class="or-kort">
+        <div class="or-kort1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2221.903168825443!2d10.20896358307909!3d56.1587788067681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3f968e6ce8a9%3A0x4283aeaab3411392!2sKlostergade%202%2C%208000%20Aarhus!5e0!3m2!1sda!2sdk!4v1644198989519!5m2!1sda!2sdk" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo" id="footerlogo">
+        </div>
+
+        <div class="footer-menu">
+            <h4>Menu</h4>
+            <a class="bestilbordfooter-link" href="bestilbord.html">Bestil bord</a>
+            <a class="Menukort footer-link" href="menukort.html">Menukort</a>
+            <a class="oomalice footer-link" href="omrestauranten.html">Om restauranten</a>
+        </div>
+
+        <div class="footer-kontakt" id="kontakt"></div>
+
+        <div class="socialemedier-footer">
+            <h4>Sociale Medier</h4>
+            <div class="socialemedier-ikoner-footer">
+                <a class="footer-icon" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a class="footer-icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- LINK TIL JS EKSTERNT-->
+    <script src="js/bordbestilling.js"></script>
+</body>
+</html>

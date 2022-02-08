@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alices Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/63f60264a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt="Alice Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a class="bestilbord nav-link" href="bestilbord.html">Bestil bord</a>
+                <a class="Menukort nav-link" href="menukort.html">Menukort</a>
+                <a class="oomalice nav-link" href="omrestauranten.html">Om restauranten</a>
+            </div>
+
+            <div class="nav-socials">
+                <a class="nav-icon social-link" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            
+            <a class="social-link" id="hamburger-button" href="javascript:void(0);" onclick="toggleNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HAMBURGER MENU -->
+    <div class="container">
+        <div class="content">
+            <div class="responsive-nav" id="responsive-nav">
+                <a class="bestilbord nav-link" href="bestilbord.html">Bestil bord</a>
+                <a class="Menukort nav-link" href="menukort.html">Menukort</a>
+                <a class="oomalice nav-link" href="omrestauranten.html">Om restauranten</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- LANDING -->
+    <section class="landing">
+        <div class="landing-hd">
+            <h2>Lad os gøre din aften til noget ekstraordinært</h2>
+            <p>Konceptet er simpelt: vi har en mission om at tilbyde kvalitetsfyldt mad lavet af lokalproduceret råvarer til en overkommelig pris. Kom forbi og oplev hjemlig hygge, lækker mad og dejlige omgivelser - alt til en overkommelig pris.
+            </p>
+            <a href="bestilbord.html" class="btn">Bestil bord</a>
+        </div>
+        <div class="landing-pic">
+            <img src="images/landing.png" alt="Billede af restauranten">
+        </div>
+    </section>
+
+    <!-- BANNER MENUKORT-->
+    <section class="menukort-banner">
+        <a href="menukort.html" class="btn2">Se menukort</a>
+    </section>
+
+    <!-- MEDARBEJDERE -->
+    <section class="medarbejdere">
+        <div class="medarbejder-flex-left">
+            <h2>Passion, lidenskab og hygge. </h2>
+        </div>
+        <div class="medarbejder-flex-right">
+            <hr>
+            <h4>Vores filosofi</h4>
+            <p>Vores kokke er ikke bundet af dogmer, men er drevet af en grundlæggende respekt for lokale, årstidsbestemte råvarer og godt, solidt køkkenhåndværk.
+
+                Dette gør sig også gældende for vores tjenere, som sætter en ære i at udvælge drikkevarer, der vækker nydelse og begejstring og akkompagnerer aftenens menu til perfektion.
+                
+            </p>
+            <hr id="hr-bottom">
+            <h4>Mød vores medarbejdere</h4>
+            <ul id="medarbejdernavne"></ul>
+            <hr>
+        </div>
+    
+    </section>
+
+    <!-- AUTOPLAY VIDEO -->
+    <section id="video-music">
+        <video loop autoplay class="video">
+            <source src="media/intro_vid.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+
+        <div id="lyd">
+            <audio id="myaudio">
+                <source src="media/Centrum WAV.wav" type="audio/wav">
+                Denne browser understøtter ikke...
+            </audio>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo" id="footerlogo">
+        </div>
+
+        <div class="footer-menu">
+            <h4>Menu</h4>
+            <a class="bestilbordfooter-link" href="bestilbord.html">Bestil bord</a>
+            <a class="Menukort footer-link" href="menukort.html">Menukort</a>
+            <a class="oomalice footer-link" href="omrestauranten.html">Om restauranten</a>
+        </div>
+
+        <div class="footer-kontakt" id="kontakt"></div>
+
+        <div class="socialemedier-footer">
+            <h4>Sociale Medier</h4>
+            <div class="socialemedier-ikoner-footer">
+                <a class="footer-icon" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a class="footer-icon" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- LINK TIL JS EKSTERNT-->
+    <script src="js/js.js"></script>
+</body>
+</html>

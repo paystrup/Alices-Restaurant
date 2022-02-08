@@ -1,0 +1,886 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 200%;
+    font-family: 'Helvetica Now Display', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --darkgreen: #0d2c24;
+    --red: #fb2326;
+    --beige: #fff7d7;
+    --offwhite: #fffaee;
+}
+
+/* SCROLL EFFECT NAVBAR*/
+.scroll-down .navbar{
+    transform: translate3d(0, -100%, 0);
+    background-color: transparent;
+}
+
+.scroll-down nav{
+    background-color: transparent;
+}
+
+.scroll-up nav{
+    box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.40);
+    color: black;
+    background-color: white;
+}
+
+
+/* NAVBAR */
+.navbar{
+    z-index: 999;
+    font-weight: normal;
+    height: 12vh;
+    background-color: white;
+}
+
+.logo a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.logo a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    color: black;
+    opacity: 0.5;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.logo a:active{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    opacity: 0.5;
+    transition: .2s;
+}
+
+.nav-socials {
+    display: flex;
+}
+
+.nav-socials i{
+    color: black;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.2em;
+    gap: 10px;
+    text-underline-offset: 5px;
+    padding: 4px 30px;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
+.nav-links a{
+    font-family: 'Helvetica Now Display', sans-serif;
+    font-weight: 500;
+    color: black;
+    text-decoration-color: transparent;
+    text-underline-offset: 5px;
+    font-size: 1rem;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
+.nav-links i{
+    color: black;
+    text-decoration-color: transparent;
+    text-underline-offset: 5px;
+}
+
+.nav-links i:hover{
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-bar{
+    text-align: center;
+}
+
+.hamburger-button {
+    display: none;
+}
+
+.is-selected {
+    padding: 0px;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    transition: all 300ms ease-in-out;
+    z-index: 10000;
+}
+
+.navbar{
+    margin: auto 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 3rem 5rem;
+    background-color: white;
+    transition: all 300ms ease-in-out;
+}
+    
+.logo{
+    margin-right: auto;
+}
+
+.logo img{
+    height: 3rem;
+}
+
+.social-link{
+    text-decoration: none;
+    color: black;
+    padding: 1rem 0 1rem 2rem;
+    transition: color 0.2s ease;
+}
+
+.content{
+    padding: 0 3rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container{
+    width: 100%;
+}
+
+.responsive-nav {
+    position: fixed;
+    display: none;
+    margin-top: 11vh;
+    background-color: white;
+    width: 100%;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    right:0;
+    transition: 300ms ease-in-out;
+    z-index: 10001;
+    box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.10);
+}
+
+.responsive-nav a{
+    padding-left: 0;
+    color: black;
+}
+
+.responsive{
+    display: flex;
+    flex-direction: column;
+}
+
+#hamburger-button {
+    display: none;
+}
+
+/* FOOTER */
+footer{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    flex-wrap: wrap;
+}
+
+footer a{
+    color: black;
+}
+
+footer a:hover{
+    opacity: 0.5;
+    transition: 0.8s;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-kontakt{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img{
+    height: 45px;
+}
+
+.socialemedier-ikoner-footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 30px;
+}
+
+.socialemedier-ikoner-footer i{
+    font-size: 1.2rem;
+}
+
+
+/* INDEX*/
+.landing{
+    display: flex;
+    gap: 200px;
+    padding-top: 12rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    padding-bottom: 8rem;
+}
+
+.landing-hd h2{
+    font-size: 3rem;
+    line-height: 140%;
+    padding-bottom: 2rem;
+}
+
+.landing-hd p{
+    padding-bottom: 2rem;
+}
+
+.medarbejdere{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    height: 100%;
+    padding: 10rem;
+    background-color: white;
+}
+
+.medarbejder-flex-left{
+    max-width: 40%;
+}
+
+.medarbejder-flex-right{
+    max-width: 40%;
+}
+
+.medarbejder-flex-right ul{
+    list-style-type: none;
+    padding-bottom: 2rem;
+}
+
+.medarbejder-flex-right p{
+    padding-bottom: 2rem;
+}
+
+.medarbejder-flex-right h4{
+    padding-top: 2rem;
+}
+
+.medarbejder-flex-left h2{
+    font-size: 5rem;
+    line-height: 140%;
+    padding-bottom: 2rem;
+}
+
+#video-music{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+    background-color: black;
+}
+
+#video-music video{
+    width: 50%;
+    height: auto;
+}
+
+.menukort-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 30vh;
+}
+
+.menukort-banner h4{
+    color: white;
+}
+
+.btn2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: solid 2px white;
+    padding: 5px;
+    width: 15ch;
+    margin-top: 2ch;
+    text-decoration: none;
+}
+
+/* BOOKING FORM bestilbord.html*/
+.bestilbord-form{
+    height: 100%;
+    padding: 12rem;
+    background-color: white;
+}
+
+#f2, #f3, #f4, #f5{
+    display: none;
+}
+
+.knapperfieldset{
+    display: flex;
+    gap: 20px;
+}
+
+fieldset{
+    border-style: none;
+    border-color: none;
+}
+
+input{
+    width: 18rem;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 15ch;
+    margin-top: 2ch;
+    text-decoration: none;
+}
+
+.submitbtn{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 15ch;
+    margin-top: 2ch;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+
+/* OM RESTAURANTEN - omrestauranten.html */
+#omrestauranten{
+    display: flex;
+    gap: 10%;
+    padding: 12rem;
+}
+
+#omrestauranten p{
+    line-height: 250%;
+}
+
+#omrestauranten h2{
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.or-hd-text{
+    max-width: 45%;
+}
+
+.or-hd-text img{
+    padding-top: 50px;
+    max-width: 300px;
+}
+
+.or-hd-pic img{
+    max-width: 100%;
+    min-width: 250px;
+}
+
+.orkort{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.or-kort1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+/* ACTION.HTML response til bordbestilling submit */
+#actionHTML{
+    padding: 12rem;
+}
+
+/* MENUKORT */
+#menukort{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 12rem;
+}
+
+#menukort hr{
+    margin-bottom: 2rem;
+}
+
+#menukort h2{
+    font-size: 2rem;
+}
+
+.menucontainer{
+    padding-bottom: 50px;
+    max-width: 500px;
+}
+
+.menucontainer img{
+    padding-top: 2rem;
+    max-width: 500px;
+    height: auto;
+}
+
+
+/* RESPONSIVE ----------------------> MOBIL + TABLET */
+
+@media screen and (max-width: 600px) {
+    /* NAVBAR */
+    .responsive .nav-link-container a {
+        display: flex;
+        text-align: left;
+    }
+
+    .navbar a.hamburger-button {
+        display: block;
+    }
+    .nav-link-container a{
+        display: none;
+    }
+
+    .navbar{
+        padding: 1rem 2rem;
+    }
+
+    /* FOOTER */
+    footer{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .footer-logo{
+        padding-bottom: 2rem;
+    }
+
+    .footer-menu{
+        padding-bottom: 2rem;
+    }
+
+    .footer-kontakt{
+        padding-bottom: 2rem;
+    }
+
+    /* LANDING PAGE */
+    .landing{
+        flex-direction: column;
+        gap: 100px;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    .landing-pic img{
+        width: 275px;
+    }
+
+    .medarbejdere{
+        flex-direction: column;
+        gap: 100px;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    .medarbejder-flex-left {
+        min-width: 90%;
+    }
+
+    .medarbejder-flex-left h2{
+        font-size: 2rem;
+    }
+
+    .medarbejder-flex-right {
+        min-width: 90%;
+    }
+
+    #video-music {
+        padding: 0rem;
+    }
+
+    #video-music video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* BESTILBORD.HTML */
+    .bestilbord-form {
+        height: 100%;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        background-color: white;
+    }
+
+    /* ACTION.HTML */
+    #actionHTML {
+        padding-top: 8rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    /* MENUKORT.HTML */
+    #menukort{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 8rem;
+    }
+      
+    .menucontainer{
+        padding-bottom: 50px;
+        max-width: 250px;
+    }
+    
+    .menucontainer img{
+        padding-top: 2rem;
+        max-width: 250px;
+        height: auto;
+    }
+
+    /* OM RESTAURANTEN */
+    #omrestauranten {
+        flex-direction: column-reverse;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 8rem;
+    }
+
+    #omrestauranten p {
+        line-height: 200%;
+    }
+
+    .or-hd-text {
+        max-width: 90%;
+    }
+
+    .or-kort1 iframe{
+        width: 100%px;
+
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    /* NAVBAR */
+    .content, navbar {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        max-width: 720px;
+    }
+
+    #hamburger-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* FOOTER */
+    footer{
+        text-align: center;
+        font-size: 1.1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo{
+        padding-bottom: 2rem;
+    }
+
+    .footer-menu{
+        padding-bottom: 2rem;
+    }
+
+    .footer-kontakt{
+        padding-bottom: 2rem;
+    }
+
+        /* LANDING PAGE */
+        .landing{
+            flex-direction: column;
+            gap: 100px;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+    
+        .landing-pic img{
+            width: 275px;
+        }
+    
+        .medarbejdere{
+            flex-direction: column;
+            gap: 100px;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+    
+        .medarbejder-flex-left {
+            min-width: 90%;
+        }
+    
+        .medarbejder-flex-left h2{
+            font-size: 2rem;
+        }
+    
+        .medarbejder-flex-right {
+            min-width: 90%;
+        }
+    
+        #video-music {
+            padding: 0rem;
+        }
+    
+        #video-music video {
+            width: 100%;
+            height: auto;
+        }
+    
+        /* BESTILBORD.HTML */
+        .bestilbord-form {
+            height: 100%;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            background-color: white;
+        }
+    
+        /* ACTION.HTML */
+        #actionHTML {
+            padding-top: 8rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+    
+        /* MENUKORT.HTML */
+        #menukort{
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            padding-top: 8rem;
+        }
+          
+        .menucontainer{
+            padding-bottom: 50px;
+            max-width: 250px;
+        }
+        
+        .menucontainer img{
+            padding-top: 2rem;
+            max-width: 250px;
+            height: auto;
+        }
+    
+        /* OM RESTAURANTEN */
+        #omrestauranten {
+            flex-direction: column-reverse;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            padding-top: 8rem;
+        }
+    
+        #omrestauranten p {
+            line-height: 200%;
+        }
+    
+        .or-hd-text {
+            max-width: 90%;
+        }
+    
+        .or-kort1 iframe{
+            width: 100%px;
+    
+        }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    /* NAVBAR */
+    .content, navbar {
+        max-width: 960px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+        /* LANDING PAGE */
+        .landing{
+            flex-direction: column;
+            gap: 100px;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+    
+        .landing-pic img{
+            width: 275px;
+        }
+    
+        .medarbejdere{
+            flex-direction: column;
+            gap: 100px;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+    
+        .medarbejder-flex-left {
+            min-width: 90%;
+        }
+    
+        .medarbejder-flex-left h2{
+            font-size: 2rem;
+        }
+    
+        .medarbejder-flex-right {
+            min-width: 90%;
+        }
+    
+        #video-music {
+            padding: 0rem;
+        }
+    
+        #video-music video {
+            width: 100%;
+            height: auto;
+        }
+    
+        /* BESTILBORD.HTML */
+        .bestilbord-form {
+            height: 100%;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            background-color: white;
+        }
+    
+        /* ACTION.HTML */
+        #actionHTML {
+            padding-top: 8rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+    
+        /* MENUKORT.HTML */
+        #menukort{
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            padding-top: 8rem;
+        }
+          
+        .menucontainer{
+            padding-bottom: 50px;
+            max-width: 250px;
+        }
+        
+        .menucontainer img{
+            padding-top: 2rem;
+            max-width: 250px;
+            height: auto;
+        }
+    
+        /* OM RESTAURANTEN */
+        #omrestauranten {
+            flex-direction: column-reverse;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            padding-top: 8rem;
+        }
+    
+        #omrestauranten p {
+            line-height: 200%;
+        }
+    
+        .or-hd-text {
+            max-width: 90%;
+        }
+    
+        .or-kort1 iframe{
+            width: 100%px;
+    
+        }
+}
+
+@media only screen and (max-width: 1600px) {
+
+
+
+}
+
+
